@@ -22,16 +22,11 @@ public class ClickExploreCareers {
 
         //Waiting until the button is clickable
         WebElement ExploreCareers = wait.until(ExpectedConditions.elementToBeClickable(MainPage.explore_careers_button));
-        //For some reason (at least in my computer) even when the element is clickable,
-        //I've notice a stutter on the page that keeps us from clicking the button,
-        //so I've added a waiter so it will wait until the javascript has finished
-        wait.until( new Predicate<WebDriver>() {
-                        public boolean apply(WebDriver driver) {
-                            return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
-                        }
-                    }
-        );
 
+        //Sorry about the 1 second sleep. For some reason the javascript is
+        //with a complete state but the page is still scrolling.
+
+        Thread.sleep(1000);
         ExploreCareers.click();
 
     }
