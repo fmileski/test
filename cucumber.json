@@ -1,0 +1,266 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4598015179,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Validate total results for given Location",
+        "description": "",
+        "id": "join-infusion;validate-total-results-for-given-location",
+        "after": [
+          {
+            "result": {
+              "duration": 1366132923,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2344255180,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open infusion website",
+            "match": {
+              "location": "MainPageSteps.i_open_infusion_wubsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219598770,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I expand the main menu",
+            "match": {
+              "location": "MainPageSteps.i_expand_main_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 250678154,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click Join",
+            "match": {
+              "location": "MainPageSteps.i_click_join()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2919883898,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click Explore Careers",
+            "match": {
+              "location": "MainPageSteps.i_click_explore_careers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172270359,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I expand the location combo",
+            "match": {
+              "location": "CareersPageSteps.i_expand_the_location_combo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192762667,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select \"Krakow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Krakow",
+                  "offset": 10
+                }
+              ],
+              "location": "CareersPageSteps.i_select(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98269128,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the list must contain 5 results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 22
+                }
+              ],
+              "location": "CareersPageSteps.the_list_must_contain_results(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89056820,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select \"Krakow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Krakow",
+                  "offset": 10
+                }
+              ],
+              "location": "CareersPageSteps.i_select(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131102359,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select \"Warsaw\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Warsaw",
+                  "offset": 10
+                }
+              ],
+              "location": "CareersPageSteps.i_select(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56374154,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the list must contain at least 1 results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "CareersPageSteps.the_list_must_contain_at_lease_results(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 110679795,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select \"Warsaw\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Warsaw",
+                  "offset": 10
+                }
+              ],
+              "location": "CareersPageSteps.i_select(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117481436,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select \"Raleigh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raleigh",
+                  "offset": 10
+                }
+              ],
+              "location": "CareersPageSteps.i_select(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171656615,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click the position \"Software QA Analyst\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Software QA Analyst",
+                  "offset": 22
+                }
+              ],
+              "location": "CareersPageSteps.i_click_the_position(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34840205,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the qualification \"Experience creating and implementing testing framework for web applications such as Selenium\" should exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Experience creating and implementing testing framework for web applications such as Selenium",
+                  "offset": 19
+                }
+              ],
+              "location": "CareersPageSteps.the_qualification_should_exist(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Join Infusion",
+    "description": "",
+    "id": "join-infusion",
+    "keyword": "Feature",
+    "uri": "features/JoinInfusion.feature"
+  }
+]
